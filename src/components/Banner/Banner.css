@@ -1,0 +1,68 @@
+.banner {
+    height: 480px;
+    position: relative; /* Changed to relative to position contents correctly */
+    width: 100%;
+    background-image: url('https://example.com/your-image.jpg'); /* Replace with your image URL */
+    background-size: cover; /* Ensures the image covers the entire element */
+    background-position: top; /* Moves the background image to the top */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    color: white;
+}
+
+.banner__contents {
+    position: absolute; /* Position contents absolutely within the banner */
+    bottom: auto; /* Remove bottom alignment */
+    top: 200px; /* Adjust this value to move contents up */
+    margin-left: 30px;
+    height: 190px;
+}
+
+.banner__title {
+    font-size: 3rem;
+    font-weight: 800;
+    padding-bottom: 0.3rem;
+}
+
+.banner__description {
+    width: 45rem; /* Adjusted width for a more average size */
+    line-height: 1.5; /* Slightly increased line-height for better readability */
+    padding-top: 1rem;
+    font-size: 1rem; /* Adjusted font size for average paragraph size */
+    max-width: 360px;
+    height: 80px; /* Adjusted height to auto to fit content */
+}
+
+.banner__button {
+    cursor: pointer;
+    color: white;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    border-radius: 0.2vw;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+    margin-right: 1rem;
+    margin-top: 0.5rem; /* Corrected margin-top value */
+    background-color: rgba(51, 51, 51, 0.5);
+    padding-bottom: 0.5rem;
+}
+
+.banner__button:hover {
+    color: black;
+    background-color: white;
+    transition: all 0.2s;
+}
+.banner__fadeBotton {
+    position: absolute; /* Position it absolutely within the banner */
+    bottom: -0.05rem; /* Adjust this value to move the fade effect slightly higher */
+    width: 100%; /* Ensure it covers the full width */
+    height: 4rem;
+    background-image: linear-gradient(
+        180deg,
+        transparent,
+        rgba(37, 37, 37, 0.61),
+        #111
+    );
+    margin: 0;
+}
